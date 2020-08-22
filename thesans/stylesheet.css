@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'TheSansArabic';
+    src: url('TheSansArabic-Light.eot');
+    src: url('TheSansArabic-Light.eot?#iefix') format('embedded-opentype'),
+        url('TheSansArabic-Light.woff2') format('woff2'),
+        url('TheSansArabic-Light.woff') format('woff'),
+        url('TheSansArabic-Light.ttf') format('truetype'),
+        url('TheSansArabic-Light.svg#TheSansArabic-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+

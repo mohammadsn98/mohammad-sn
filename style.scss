@@ -1,0 +1,358 @@
+// Variables
+
+$darkgreen: #175f4c;
+$lightgreen: #208b73;
+$primary-font: Gotham-Black;
+$secondery-font: TheSansArabic-Light;
+@font-face {
+  font-family: "Gotham-Black";
+  src: url("gotham woff/Gotham-Black.eot"); /* IE9 Compat Modes */
+  src: url("gotham woff/Gotham-Black.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("gotham woff/Gotham-Black.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("gotham woff/Gotham-Black.woff")
+      format("woff"),
+    /* Pretty Modern Browsers */ url("gotham woff/Gotham-Black.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("gotham woff/Gotham-Black.svg#svgFontName")
+      format("svg"); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: "TheSansArabic-Light";
+  src: url("thesans/TheSansArabic-Light.eot"); /* IE9 Compat Modes */
+  src: url("thesans/TheSansArabic-Light.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("thesans/TheSansArabic-Light.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("thesans/TheSansArabic-Light.woff")
+      format("woff"),
+    /* Pretty Modern Browsers */ url("thesans/TheSansArabic-Light.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("thesans/TheSansArabic-Light.svg#svgFontName") format("svg"); /* Legacy iOS */
+}
+// Variables Ends
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container-fluid {
+  padding: 3% 15%;
+}
+.logo {
+  width: 150px;
+}
+.navbar {
+  position: absolute;
+  margin: 3%;
+  width: 85%;
+}
+.navbar-nav {
+  margin-left: 65%;
+}
+.nav-link {
+  margin: 15px;
+  font-family: $primary-font;
+  letter-spacing: 4px;
+  font-size: 1.3rem;
+  color: #fff;
+  &:hover {
+    color: $lightgreen;
+    transition: all 0.2s;
+  }
+}
+
+.toprec {
+  width: 100%;
+}
+
+.navbar-toggler {
+  font-size: 1rem;
+  border: 1px solid #fff;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 10)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+//About Section
+
+hr {
+  font-family: $primary-font;
+  border: dotted 7px $lightgreen;
+  width: 7%;
+  margin: 10% auto;
+  border-bottom: none;
+}
+
+h1 {
+  font-size: 4rem;
+  font-family: $primary-font;
+  color: $darkgreen;
+  text-align: center;
+  letter-spacing: 7px;
+  margin-bottom: 7%;
+}
+
+.p-about {
+  width: 50%;
+  text-align: center;
+  margin: 5% auto;
+  font-size: 2rem;
+  line-height: 2.5;
+  color: $lightgreen;
+}
+
+//Skills Section
+.skills-section {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills-pics {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 7%;
+}
+
+//Circles Starts
+
+//Circles Ends
+
+//Portfolio Section
+
+#testimonials {
+  text-align: center;
+}
+
+.img-portfolio {
+  margin: 0 auto;
+  width: 75%;
+}
+
+.carousel-item {
+  padding: 7% 15%;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-color: $lightgreen;
+}
+
+//Contact Section
+
+.email-label {
+  margin-bottom: 1%;
+}
+
+.thirdrow {
+  margin: 0 auto;
+  margin-top: 1%;
+}
+/*input[type="email"] {
+  margin-left: 25%;
+}*/
+
+.wide-label {
+  font-family: $primary-font, $secondery-font;
+  color: $darkgreen;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 250px;
+  height: 50px;
+}
+
+textarea,
+input[type="text"],
+input[type="email"] {
+  background-color: $lightgreen;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 5px 5px 5px;
+  resize: none;
+  outline: none;
+}
+
+.colu {
+  margin-left: -0.5%;
+}
+
+/*.wide-label {
+  font-size: 20px;
+  width: 35%;
+  color: $darkgreen;
+}*/
+
+::placeholder {
+  font-family: $primary-font, $secondery-font;
+  font-size: 12px;
+  color: white;
+}
+
+/*.ln {
+  margin-left: 10%;
+}*/
+
+/*.last-name {
+  margin-left: 18.7%;
+}*/
+
+.btn-outline-success {
+  color: $lightgreen;
+  border-color: $darkgreen;
+}
+
+.btn-outline-success:hover {
+  border-color: $darkgreen;
+  background-color: $lightgreen;
+}
+
+//Footer
+
+.bg-white {
+  margin-top: 10%;
+  border: none;
+}
+
+#footer {
+  margin-top: 15%;
+}
+
+.footerlogo {
+  width: 25%;
+  margin: 10%;
+}
+
+.footerrow {
+  margin-top: 10%;
+}
+
+i {
+  margin: 50px;
+  color: #fff;
+  font-size: 30px;
+}
+
+/*.row a {
+  border: solid 1px yellow;
+}*/
+
+/*.col {
+  border: solid blue 1px;
+}*/
+
+.icons {
+  margin-top: 2%;
+  text-align: center;
+}
+
+/*.botrec {
+  width: 100%;
+}
+*/
+
+.pfooter {
+  position: absolute;
+  color: #fff;
+  margin-left: 58%;
+  margin-top: 10%;
+}
+
+@media Screen and (max-width: 375px) {
+  .navbar-nav {
+    margin-left: 0;
+  }
+
+  .logo {
+    width: 35px;
+  }
+
+  .nav-link {
+    margin: 0;
+    font-family: $primary-font;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    color: $darkgreen;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .p-about {
+    font-size: 1rem;
+  }
+
+  .js {
+    width: 115px;
+  }
+  .css {
+    width: 125px;
+  }
+  .html {
+    width: 125px;
+  }
+  .ps {
+    width: 115px;
+  }
+  .ai {
+    width: 125px;
+  }
+  .in {
+    width: 115px;
+  }
+  /*.skills-pics {
+    width: 125px;
+  }*/
+
+  #Contact {
+    text-align: center;
+  }
+
+  textarea {
+    width: 200px;
+    font-size: 12px;
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    width: 200px;
+    height: 35px;
+    font-size: 12px;
+  }
+
+  .wide-label {
+    font-size: 12px;
+  }
+
+  ::placeholder {
+    font-size: 10px;
+  }
+
+  .btnn {
+    font-size: 0.6rem;
+  }
+  .no {
+    display: none;
+  }
+  .icons {
+    margin: 0;
+  }
+
+  .col-8 {
+    max-height: 10px;
+  }
+  i {
+    font-size: 15px;
+    margin: 0 15px 0 15px;
+  }
+  .pfooter {
+    color: #fff;
+    position: absolute;
+    font-size: 7px;
+    margin: 7% 0 0 45%;
+  }
+}
